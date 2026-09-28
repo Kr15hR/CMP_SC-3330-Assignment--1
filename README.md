@@ -1,4 +1,4 @@
-# CMP_SC / INFOTC 3330 - Group Assignment #1: Campus Event Tickets
+# CMP_SC  - Group Assignment #1: Campus Event Tickets
 
 ## Project Overview
 This Java application models a campus event ticketing system that manages event creation, ticket issuance, admittance, cancellations, and basic reporting while strictly following object-oriented design principles and invariants.
