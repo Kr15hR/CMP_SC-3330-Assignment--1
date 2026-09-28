@@ -11,17 +11,10 @@ public class TicketManager {
         this.nextTicketId = 1;
     }
 
-    // Creates a new ticket for a student with an auto-generated ID and saves it to the book.
-    public Ticket issueTicket(Event event, TicketType type, String studentName) {
-        int id = nextTicketId;
-        Ticket createdTicket = ticketBook.createTicket(id, event, type, studentName);
-        
-        // Only move to the next ID if the ticket was successfully created.
-        if (createdTicket != null) {
-            nextTicketId++;
-        }
-        
-        return createdTicket;
+    public int createTicket(Event event, TicketType type, String studentName) {
+        int id = nextTicketId++; // Or your counter logic
+        ticketBook.createTicket(id, event, type, studentName);
+        return id;
     }
 
     // Finds a ticket by ID and marks it as used/admitted.
